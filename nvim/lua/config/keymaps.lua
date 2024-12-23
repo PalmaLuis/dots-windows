@@ -77,6 +77,16 @@ vapi.nvim_set_keymap("x", "K", "<Nop>", { noremap = true, silent = true })
 -- Redefine Ctrl+s to save with the custom function
 vapi.nvim_set_keymap("n", "<C-s>", ":lua SaveFile()<CR>", { noremap = true, silent = true })
 
+-- iniciar live server en el directorio actual
+keymap.set("n", "<leader>ls", function()
+  vim.fn.jobstart({ "live-server", "." }, { detach = true })
+end, { desc = "Iniciar live server" })
+
+-- abrir navegador live sercver
+keymap.set("n", "<leader>lob", function()
+  vim.fn.jobstart({ "start", "http://localhost:8080" }, { detach = true })
+end, { desc = "Abrir navegador live server" })
+
 --Diagnostic
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
