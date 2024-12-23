@@ -14,6 +14,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- Poner sintaxis en español de markdown
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
@@ -21,6 +22,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spelllang = "es"
   end,
 })
+
 
 require("lazy").setup({
   spec = {
