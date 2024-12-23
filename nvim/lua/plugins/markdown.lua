@@ -18,4 +18,13 @@ return {
       highlight = "render-markdownBullet",
     },
   },
+
+  require("render-markdown").setup({
+    code = {
+      style = "full",
+      disable_background = true,
+      width = "full",
+      border = "thick",
+    },
+  }),
 }
