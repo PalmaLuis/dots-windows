@@ -41,25 +41,30 @@ function gf{
     git flow $args
 }
 
-# BUSCAR CUALQUIER COSA EN YOUTUBE
-function syt {
-    param (
-        [string]$s = $(Read-Host "Introduce el término a buscar en YouTube")
-    )
-    # Reemplaza espacios por '+' para formar la URL de búsqueda
-    $query = $s-replace ' ', '+'
-    $url = "https://www.youtube.com/results?search_query=$query"
 
-    # Abre la URL en el navegador predeterminado
-    Start-Process $url
-    Write-Host "Buscando en YouTube: $SearchTerm" -ForegroundColor Green
+# PONER MUSICA RANDOM DE LA PLAYLIST DE LOFI
+function pyt{
+ param (
+        [string]$s = $(Read-Host "Introduce el término a buscar en YouTube"),
+        [switch]$r
+    )
+    if($s){
+      # Reemplaza espacios por '+' para formar la URL de búsqueda
+      $query = $s -replace ' ', '+'
+      $url = "https://www.youtube.com/results?search_query=$query"
+
+      # Abre la URL en el navegador predeterminado
+      Start-Process $url
+     
+    }elseif($r){
+    $location = pwd
+      Set-Location D:\projects\extraer_videos_playlist\
+      .\venv\Scripts\Activate.ps1
+      py .\main.py
+      deactivate
+      Set-Location $location
+    }
 }
 
-
-# PONER MUSICA LOFI
-function pyt{
-    Start-Process "https://acortar.link/VRrhEW"
-  }
-  
 #ALIAS
 Set-Alias g git

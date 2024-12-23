@@ -20,7 +20,7 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "tokyonight" } },
 
     -- import/override with your plugins
-    --{ import = "lazyvim.plugins.extras.linting.esLint" },
+    { import = "lazyvim.plugins.extras.linting.esLint" },
     --{ import = "lazyvim.plugins.extras.formatting.prettier" },
 
     -- Para lenguagues
