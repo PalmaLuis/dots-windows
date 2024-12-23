@@ -45,7 +45,7 @@ function gf{
 # PONER MUSICA RANDOM DE LA PLAYLIST DE LOFI
 function pyt{
  param (
-        [string]$s = $(Read-Host "Introduce el término a buscar en YouTube"),
+        [string]$s,
         [switch]$r
     )
     if($s){
@@ -63,6 +63,14 @@ function pyt{
       py .\main.py
       deactivate
       Set-Location $location
+    }else {
+       #Si no se pasan parametros preguntara que deas buscar en youtube
+      $s = (Read-Host "Introduce el término a buscar en YouTube")
+      if($s){
+          $query = $s -replace ' ', '+'
+          $url = "https://www.youtube.com/results?search_query=$query"
+          Start-Process $url
+        }
     }
 }
 
