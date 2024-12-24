@@ -7,9 +7,39 @@ function d {
 }
 
 # Cambiar de direccion a la carpeta learn
+#function l {
+#  param(
+#    [string]$d
+#  )
+#  if(!$d){
+#    Set-Location D:\learn
+#  } elseif($d){
+#      Set-Location D:\learn\$d
+#    }
+# }
+
 function l {
-  Set-Location D:\learn
+    param(
+        [Parameter(Position = 0)]
+        [ArgumentCompleter({
+            param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameters)
+            Get-ChildItem -Path "D:\learn" -Directory | ForEach-Object { $_.Name }
+        })]
+        [string]$d
+    )
+
+    $RutaCompleta = "D:\learn"
+    if ($d) {
+        $RutaCompleta = Join-Path "D:\learn" $d
+    }
+    if (Test-Path $RutaCompleta) {
+        Set-Location $RutaCompleta
+    } else {
+        Write-Host "La carpeta especificada no existe: $RutaCompleta" -ForegroundColor Red
+    }
 }
+
+
 
 #   Cambiar de direccion a la carpeta projectss
 function p {
