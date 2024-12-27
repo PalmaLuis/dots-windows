@@ -23,6 +23,7 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+vim.cmd("syntax on")
 
 require("lazy").setup({
   spec = {

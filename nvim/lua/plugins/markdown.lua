@@ -19,7 +19,7 @@ return {
     },
     code = {
       style = "full",
-      disable_background = true,
+      disable_background = false,
       width = "full",
       border = "thick",
     },

@@ -42,6 +42,11 @@ keymap.set("n", "<C-w><right>", "<C-w>>")
 keymap.set("n", "<C-w><up>", "<C-w>+")
 keymap.set("n", "<C-w><down>", "<C-w>-")
 
+-- Moverse entre buffers
+keymap.set("n", "bl", ":bnext<CR>", { desc = "Siguiente buffer" })
+keymap.set("n", "bh", ":bprev<CR>", { desc = "Buffer anterior" })
+keymap.set("n", "bw", ":bdelete<CR>", { desc = "Cerrar buffer" })
+keymap.set("n", "bs", ":write<CR>", { desc = "Guardar cambios" })
 -- Oil
 keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open paren directory" })
 

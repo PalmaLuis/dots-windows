@@ -8,3 +8,8 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 --
 -- Turn off paste mode when leavin insert
+--
+
+vim.cmd([[
+ autocmd FileType html, css, javascript, typescript, php EmmetInstall
+]])
