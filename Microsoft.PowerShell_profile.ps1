@@ -104,5 +104,27 @@ function pyt{
     }
 }
 
+function anime{
+    param(
+      [string]$flv,
+      [string]$va
+    )
+    if($flv){
+        $query = $flv -replace ' ', '+'
+        $url = "https://www3.animeflv.net/browse?q=$query"
+        Start-Process $url
+      }elseif($va){
+          $query = $va -replace ' ', '+'
+          $url = "https://ww3.animeonline.ninja/?s=$query"
+          Start-Process $url
+        }else{
+            $flv = (Read-Host "Introduce el anime a buscar")
+            if($flv){
+               $query = $flv -replace ' ', '+'
+               $url = "https://ww3.animeflv.net/browse?q=$query"
+            }
+          }
+  }
+
 #ALIAS
 Set-Alias g git

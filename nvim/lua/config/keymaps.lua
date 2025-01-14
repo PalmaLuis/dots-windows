@@ -28,6 +28,9 @@ keymap.set("n", "<s-tab>", ":tabprev<Return>", opts)
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
 
+-- close window
+keymap.set("n", "sc", ":close<Return>", opts)
+
 -- Move window
 --MOVER A LA IZQUIERDA
 keymap.set("n", "sh", "<C-w>h")
