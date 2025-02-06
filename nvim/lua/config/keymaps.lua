@@ -6,6 +6,7 @@ local keymap = vim.keymap
 local vapi = vim.api
 local opts = { noremap = true, silent = true }
 
+keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show documentation" })
 -- increment / decrement
 keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")

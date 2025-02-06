@@ -1,0 +1,101 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "'Dank Mono', monospacee",
+  "editor.fontLigatures": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "terminal.integrated.inheritEnv": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": [],
+  "workbench.iconTheme": "symbols",
+  // "liveSassCompile.settings.forceBaseDirectory": "/css",
+  "editor.codeActionsOnSave": {},
+  "editor.fontVariations": false,
+  "glassit.alpha": 240,
+  "glassit.step": 3,
+  "workbench.sideBar.location": "right",
+  "files.associations": {
+    "*.sqlbook": "sql",
+    "*.ndjson": "jsonl",
+    "*.dbclient-js": "javascript",
+    "*.embeddedhtml": "html",
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  },
+  "editor.cursorBlinking": "expand",
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "css.lint.unknownAtRules": "ignore",
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "codesnap.containerPadding": "5em",
+  "workbench.colorTheme": "Aura Dracula Spirit (Soft)",
+  "dotenv.enableAutocloaking": false,
+  "database-client.autoSync": true,
+  "editor.tabSize": 2,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.ChromeDebuggingAttachment": false,
+  "vscode-pets.petSize": "medium",
+  "vscode-pets.throwBallWithMouse": true,
+  // NUEVOS CAMBIOS
+  // "workbench.editor.showTabs": "single",
+  "editor.scrollbar.vertical": "hidden",
+  // "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.guides.indentation": false,
+  "editor.glyphMargin": true,
+  "workbench.layoutControl.enabled": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "workbench.settings.applyToAllProfiles": [
+    "editor.fontFamily"
+  ],
+  "window.zoomLevel": 1.1,
+  "workbench.statusBar.visible": false,
+  "terminal.integrated.fontLigatures.enabled": true
+}

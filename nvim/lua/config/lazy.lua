@@ -28,7 +28,7 @@ vim.cmd("syntax on")
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "tokyonight", transparent = true } },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
 
     -- import/override with your plugins
     { import = "lazyvim.plugins.extras.linting.esLint" },
@@ -83,14 +83,14 @@ require("lazy").setup({
   },
 })
 
--- require("bufferline").setup({
---   options = {
---     separator_style = "slant",
---     offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
---   },
---   highlights = {
---     fill = {
---       guibg = "NONE",
---     },
---   },
--- })
+require("bufferline").setup({
+  options = {
+    separator_style = "slant",
+    offsets = { { filetype = "NvimTree", text = "", padding = 1 } },
+  },
+  highlights = {
+    fill = {
+      guibg = "NONE",
+    },
+  },
+})
