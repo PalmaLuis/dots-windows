@@ -6,6 +6,15 @@ local keymap = vim.keymap
 local vapi = vim.api
 local opts = { noremap = true, silent = true }
 
+-- sync system clipboard
+vim.opt.clipboard = "unnamedplus"
+
+-- search ignoring case
+vim.opt.ignorecase = true
+
+-- vim "ignore case" upper case
+vim.opt.smartcase = true
+
 keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show documentation" })
 -- increment / decrement
 keymap.set("n", "+", "<C-a>")

@@ -14,7 +14,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Poner sintaxis en español de markdown
+--[[ Poner sintaxis en español de markdown ]]
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "markdown",
   callback = function()
@@ -22,8 +22,8 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt_local.spelllang = "es"
   end,
 })
-
-vim.cmd("syntax on")
+--
+--[[ vim.cmd("syntax on") ]]
 
 require("lazy").setup({
   spec = {
@@ -41,7 +41,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.astro" },
     { import = "lazyvim.plugins.extras.lang.docker" },
     { import = "lazyvim.plugins.extras.lang.git" },
-    { import = "lazyvim.plugins.extras.lang.markdown" },
+    -- { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.php" },
     { import = "lazyvim.plugins.extras.lang.python" },
     { import = "lazyvim.plugins.extras.lang.sql" },
