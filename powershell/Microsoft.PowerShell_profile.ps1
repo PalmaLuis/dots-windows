@@ -12,6 +12,7 @@ Write-Host @"
 
 #oh-my-posh --init --shell pwsh --config D:/dots/robbyrussell.json | Invoke-Expression # quita el comentario si quieres usar oh-my-posh
 Invoke-Expression (&starship init powershell) -- #para usar starship
+Invoke-Expression (& {(zoxide init powershell | Out-String)})
 Import-Module -Name Terminal-Icons
 
 # Saber donde se instalo un programa

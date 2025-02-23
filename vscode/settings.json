@@ -87,15 +87,19 @@
   "editor.guides.indentation": false,
   "editor.glyphMargin": true,
   "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+  "workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
+  "window.zoomLevel": 1.1,
+  "workbench.statusBar.visible": false,
+  "terminal.integrated.fontLigatures.enabled": true,
+  "workbench.startupEditor": "none",
+  "vscode-neovim.compositeKeys": {},
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "security.workspace.trust.untrustedFiles": "open",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "window.menuBarVisibility": "compact",
-  "window.commandCenter": false,
-  "workbench.settings.applyToAllProfiles": [
-    "editor.fontFamily"
-  ],
-  "window.zoomLevel": 1.1,
-  "workbench.statusBar.visible": false,
-  "terminal.integrated.fontLigatures.enabled": true
+  "workbench.editor.enablePreview": false,
+  "workbench.activityBar.location": "hidden"
 }
