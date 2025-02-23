@@ -1,4 +1,4 @@
-ObsidianBacklinksObsidianBacklinksindows Config
+#Windows Config
 
 Instalar programas con winget, desde la pagina oficial
 `https://winstall.app`
