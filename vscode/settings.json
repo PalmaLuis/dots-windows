@@ -1,6 +1,6 @@
 {
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "editor.minimap.enabled": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell", // cambiar la terminal por defecto a PowerShell
+  "editor.minimap.enabled": false, // quitar el minimapa de la derecha
   "editor.fontFamily": "'Dank Mono', monospacee",
   "editor.fontLigatures": true,
   "[python]": {
@@ -17,12 +17,9 @@
   ],
   "liveSassCompile.settings.autoprefix": [],
   "workbench.iconTheme": "symbols",
-  // "liveSassCompile.settings.forceBaseDirectory": "/css",
   "editor.codeActionsOnSave": {},
   "editor.fontVariations": false,
-  "glassit.alpha": 240,
-  "glassit.step": 3,
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "right", // poner la barra de archivos a la derecha
   "files.associations": {
     "*.sqlbook": "sql",
     "*.ndjson": "jsonl",
@@ -56,12 +53,12 @@
   "editor.cursorBlinking": "expand",
   "editor.linkedEditing": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.guides.bracketPairs": true,
+  // "editor.guides.bracketPairs": true, // mostrar las líneas de los pares de corchetes
   "editor.cursorSmoothCaretAnimation": "on",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": true, // formatear el código al guardar
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -77,21 +74,20 @@
   "editor.tabSize": 2,
   "liveServer.settings.CustomBrowser": "chrome",
   "liveServer.settings.ChromeDebuggingAttachment": false,
-  "vscode-pets.petSize": "medium",
-  "vscode-pets.throwBallWithMouse": true,
   // NUEVOS CAMBIOS
-  // "workbench.editor.showTabs": "single",
-  "editor.scrollbar.vertical": "hidden",
-  // "editor.overviewRulerBorder": false,
+  "workbench.editor.showTabs": "single", // ocultar todos los nombres de archivos abiertos ctrl k p ver archivos abiertos
+  "editor.scrollbar.vertical": "hidden", // ocultar la barra de desplazamiento vertical
+  "editor.overviewRulerBorder": false, // ocultar el borde del minimapa
   "editor.hideCursorInOverviewRuler": true,
-  "editor.guides.indentation": false,
-  "editor.glyphMargin": true,
+  "editor.guides.indentation": false, // ocultar las líneas de indentación
+  "indenticator.width": 1,
+  "indenticator.color.dark": "rgba(255,255,255,0.1)",
+  "editor.glyphMargin": true, // para oculttar el debug puntos rojos
   "workbench.layoutControl.enabled": false,
   "window.menuBarVisibility": "compact",
   "window.commandCenter": false,
   "workbench.settings.applyToAllProfiles": ["editor.fontFamily"],
   "window.zoomLevel": 1.1,
-  "workbench.statusBar.visible": false,
   "terminal.integrated.fontLigatures.enabled": true,
   "workbench.startupEditor": "none",
   "vscode-neovim.compositeKeys": {},
@@ -101,5 +97,10 @@
     "asvetliakov.vscode-neovim": 1
   },
   "workbench.editor.enablePreview": false,
-  "workbench.activityBar.location": "hidden"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.statusBar.visible": false,
+  "editor.matchBrackets": "never",
+  "workbench.activityBar.location": "hidden" // mejora el march brackers
 }
